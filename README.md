@@ -52,8 +52,6 @@ SBD_median <- median(steps_by_day)
 SBD_mean
 SBD_median
 ```
-The mean number of steps is `r SBD_mean` and the median number of steps is `r SBD_median`
-
 
 # What is the average daily activity pattern?
 
