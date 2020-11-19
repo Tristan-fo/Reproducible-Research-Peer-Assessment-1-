@@ -40,7 +40,7 @@ steps_by_day <- tapply(data_no_NA$steps, data_no_NA$date, sum)
 ```{r}
 qplot(steps_by_day, xlab='Total steps per day', ylab = "Frequency", binwidth=500)
 ```
-![](https://github.com/Tristan-fo/Reproducible-Research-Peer-Assessment-1-/blob/master/Figures/Total-Number-of-steps-per-day.png)
+![](https://github.com/Tristan-fo/Reproducible-Research-Peer-Assessment-1-/blob/main/Figures/Total%20Number%20of%20steps%20per%20day.png)
 
 ## Calculate and report the mean and median of the total number of steps taken per day
 
@@ -66,7 +66,7 @@ plot(steps_interval$interval, steps_interval$steps, type='l',
      ylab="Average number of steps", 
      col = "red")
 ```
-
+![](https://github.com/Tristan-fo/Reproducible-Research-Peer-Assessment-1-/blob/main/Figures/Average%20Number%20of%20steps%20per%20day.png)
 
 ## Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -119,6 +119,8 @@ qplot(df_imputed_steps_by_day$steps,
      xlab="Total number of steps in a day")
 ```
 
+![](https://github.com/Tristan-fo/Reproducible-Research-Peer-Assessment-1-/blob/main/Figures/Total%20number%20of%20steps%20per%20day%20(NA%20replaced).png)
+
 Calculate & compare the mean and median of the datasets
 ```{r}
 # Mean & median of the dataset without the missing values 
@@ -163,3 +165,4 @@ qplot(interval,
       main = "", col = "red") +
   facet_wrap(~ type_of_day, ncol = 1)
 ```
+![](https://github.com/Tristan-fo/Reproducible-Research-Peer-Assessment-1-/blob/main/Figures/Total%20number%20of%20steps%20-%20Weekday%20vs%20Weekend.png)
