@@ -40,7 +40,7 @@ steps_by_day <- tapply(data_no_NA$steps, data_no_NA$date, sum)
 ```{r}
 qplot(steps_by_day, xlab='Total steps per day', ylab = "Frequency", binwidth=500)
 ```
-
+![](https://github.com/Tristan-fo/Reproducible-Research-Peer-Assessment-1-/blob/master/Figures/Total-Number-of-steps-per-day.png)
 
 ## Calculate and report the mean and median of the total number of steps taken per day
 
